@@ -101,10 +101,12 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_e,      quit,           {0} },
 	{ 0,                            XF86XK_AudioRaiseVolume,   spawn,     SHCMD("volume -u") },
 	{ 0,                            XF86XK_AudioLowerVolume,   spawn,     SHCMD("volume -d") },
-	{ 0,                            XF86XK_MonBrightnessUp,   spawn,     SHCMD("brightness -u") },
-	{ 0,                            XF86XK_MonBrightnessDown,   spawn,     SHCMD("brightness -d") },
-	{ MODKEY,                            XK_F11,   spawn,     SHCMD("tmux-sessions") },
-	{ MODKEY,                            XK_Escape,   spawn,     SHCMD("power-menu") },
+	{ 0,                            XF86XK_MonBrightnessUp,    spawn,     SHCMD("brightness -u") },
+	{ 0,                            XF86XK_MonBrightnessDown,  spawn,     SHCMD("brightness -d") },
+	{ MODKEY,                       XK_F11,                    spawn,     SHCMD("tmux-sessions") },
+	{ MODKEY|ShiftMask,             XK_Escape,                 spawn,     SHCMD("power-menu") },
+	{ MODKEY|ShiftMask,             XK_w,                      spawn,     SHCMD("chpaper") },
+	{ MODKEY|ShiftMask,             XK_Insert,                 spawn,     SHCMD("emoji-menu") },
 };
 
 /* button definitions */
